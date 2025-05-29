@@ -1,0 +1,177 @@
+/* সাধারণ সেটিংস */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* মূল কনটেইনার */
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
+
+/* বাম দিক */
+.left {
+  flex: 1;
+  padding: 50px;
+}
+
+.left h1 {
+  color: #1877f2;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 24px;
+}
+
+/* ডান দিক (ফর্ম) */
+.right {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+/* ইনপুট ফিল্ড */
+form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+/* সাবমিট বাটন */
+#submit {
+  background-color: #1877f2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submit:hover {
+  background-color: #165ec9;
+}
+
+/* লিঙ্ক */
+a {
+  display: block;
+  text-align: center;
+  margin: 12px 0;
+  text-decoration: none;
+  color: #1877f2;
+  font-size: 14px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+}
+
+/* নতুন একাউন্ট বাটন */
+.create-btn {
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #36a420;
+}
+
+/* পাসওয়ার্ড ইনপুট এর ভিতরে চোখ */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 40px; /* চোখের জন্য জায়গা */
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+/* ❗ ভুল পাসওয়ার্ড বার্তা */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+
+/* রেসপনসিভ ডিজাইন */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .left {
+    padding: 20px;
+  }
+
+  .left h1 {
+    font-size: 48px;
+  }
+
+  .left p {
+    font-size: 18px;
+  }
+
+  .right {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  form input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  #submit, .create-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
